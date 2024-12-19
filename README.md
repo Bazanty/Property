@@ -4,67 +4,67 @@ The **Property Management System** is a comprehensive command-line application d
 
 
 ## Table of Content
-* Project Overview
+   * Project Overview
 
-* Features
+   * Features
 
-* structure
+   * structure
 
-* File Description
+   * File Description
 
-* Installation
+   * Installation
 
-* Usage
+   * Usage
 
-* CLI Commands
+   * CLI Commands
+  
+   * Contributing
 
-* Contributing
+   * License
 
-* License
-
-* Author
+   * Author
 
 
 ### **Overview**
-The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
+  The **Property Management System** is a Python-based application designed to streamline property management for agents. 
+  It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently.
+  The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
 
 
 
 #### **Features**
-* **Agent Management**: Create and manage agents, including authentication and profile details.
+   * **Agent Management**: Create and manage agents, including authentication and profile details.
 
 
-* **Property Management**: Add, update, delete, and list properties.
+   * **Property Management**: Add, update, delete, and list properties.
+
+ 
+   * **Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
 
 
-* **Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
+   * **Client Management**: Manage client information, link clients to properties, and handle client data.
 
 
-* **Client Management**: Manage client information, link clients to properties, and handle client data.
+   * **Payment Management**: Record and track payments made by clients for their rented properties.
 
 
-* **Payment Management**: Record and track payments made by clients for their rented properties.
-
-
-* **Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
+   * **Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
 
 
 
 
 ##### Structure
-Property-Management-System/
+   Property-Management-System/
 
-├── property/
+   ├── property/
 
-│   ├── cli.py            # CLI commands and logic
+   │   ├── cli.py            # CLI commands and logic
 
-│   ├── database.py       # Database configuration and session management
+   │   ├── database.py       # Database configuration and session management  │   ├── models.py         # SQLAlchemy models (Agent, Property, Client, etc.)
 
-│   ├── models.py         # SQLAlchemy models (Agent, Property, Client, etc.)
+   │   ├── main.py           # Entry point for the application
 
-│   ├── main.py           # Entry point for the application
-
-│   ├── requirements.txt  # Project dependencies
+   │   ├── requirements.txt  # Project dependencies
 
 ├── venv/                 # Virtual environment directory (usually excluded from version control)
 
