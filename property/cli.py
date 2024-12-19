@@ -278,7 +278,18 @@ def export_client_report():
             writer.writerow([client.id, client.name, client.email, client.agent_id, client.property_id])
     click.echo("Client report exported successfully!")
     db.close()
-
+@click.command()
+def export_room_report():
+    """Export a report of all rooms to a CSV file."""
+    db = SessionLocal()
+    rooms = db.query(Room).all()
+    with open('rooms_report.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Room ID", "Type", "Size", "Property ID"])
+        for room in rooms:
+            writer.writerow([room.id, room.type, room.size, room.property_id])
+    click.echo("Room report exported successfully!")
+    db.close()
 
     
 
@@ -300,6 +311,7 @@ cli.add_command(search_property)
 cli.add_command(view_payments)
 cli.add_command(export_property_report)
 cli.add_command(export_client_report)
+cli.add_command(export_room_report)
 cli.add_command(update_client)
 
 
