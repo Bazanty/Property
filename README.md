@@ -22,25 +22,36 @@ The **Property Management System** is a comprehensive command-line application d
 
 -Author
 
+
 ### **Overview**
 The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
+
 
 
 #### **Features**
 -**Agent Management**: Create and manage agents, including authentication and profile details.
 
+
 -**Property Management**: Add, update, delete, and list properties.
+
 
 -**Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
 
+
 -**Client Management**: Manage client information, link clients to properties, and handle client data.
+
 
 -**Payment Management**: Record and track payments made by clients for their rented properties.
 
+
 -**Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
+
+
+
 
 ##### Structure
 Property-Management-System/
+
 ├── property/
 
 │   ├── cli.py            # CLI commands and logic
@@ -65,7 +76,9 @@ Property-Management-System/
 
 └── README.md             # Project documentation
 
-###### File Descriptions:
+
+
+##### File Descriptions:
 -cli.py: Contains the logic for handling command-line interface commands that interact with the user.
 
 -database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
@@ -78,8 +91,12 @@ Property-Management-System/
 
 -property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
 
+
+
  ###### Installation and Setup
  To get the **Property Management System** up and running, follow these steps:
+
+ 
 
 **Using Pip**
 
@@ -98,8 +115,10 @@ Property-Management-System/
 4.**Intialize the Database**:
 `python property/database.py`
 
-5. **Run the Application** 
+5.**Run the Application** 
 `python -m property.main`
+
+
 
 **Using Pipenv**
 1.**Install Pipenv**
@@ -118,11 +137,16 @@ Pipfile:
 5.**Run the Application**:
 python -m property.main 
 
+
+
 **Contribution**
 We welcome contributions from anyone who wants to help improve the Property Management System. If you have ideas to solve real-world problems faced by property managers, agents, and clients, your input is highly valued.
 Feel free to fork the repository, open issues, and submit pull requests. By contributing, you'll be making the system more powerful and helping property managers work more efficiently.
 
+
+
  **How to Contribute**
+ 
 1.Fork the repository.
 
 2.Create a new branch `(git checkout -b feature-branch)`.
@@ -140,7 +164,7 @@ Feel free to fork the repository, open issues, and submit pull requests. By cont
 Thank you for your interest and contributions!
 
 
-###### **File Descriptions**
+#### File Descriptions
 1.LICENSE: The open-source license for the project, specifying how others can use and distribute the code.
 
 2.property.db: The SQLite database file storing all agent, client, property, room, and payment data.
@@ -153,11 +177,14 @@ Thank you for your interest and contributions!
 #### License
 This project is licensed under the MIT License - see the [LICENSE] file for details.
 
+
 #### Author 
 This project was developed by **Nyakundi Brian**
 
+
 #### Project URL
 You can access the project repository and related resources at the following URL:
+
 
 Project URL
 
