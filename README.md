@@ -60,7 +60,9 @@ The **Property Management System** is a comprehensive command-line application d
 
    │   ├── cli.py            # CLI commands and logic
 
-   │   ├── database.py       # Database configuration and session management  │   ├── models.py         # SQLAlchemy models (Agent, Property, Client, etc.)
+   │   ├── database.py       # Database configuration and session management 
+   
+   │   ├── models.py         # SQLAlchemy models (Agent, Property, Client, etc.)
 
    │   ├── main.py           # Entry point for the application
 
@@ -126,7 +128,8 @@ The **Property Management System** is a comprehensive command-line application d
 
 
 
-**Using Pipenv**
+   **Using Pipenv**
+
 1.**Install Pipenv**
 `pip install pipenv`
 
@@ -171,6 +174,8 @@ Thank you for your interest and contributions!
 
 
 #### File Descriptions
+
+
 1.LICENSE: The open-source license for the project, specifying how others can use and distribute the code.
 
 2.property.db: The SQLite database file storing all agent, client, property, room, and payment data.
