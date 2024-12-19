@@ -53,8 +53,11 @@ The **Property Management System** is a comprehensive command-line application d
 
 
 
-##### Structure
-   Property-Management-System/
+##### Project Structure
+
+
+  ```bash
+   **Property-Management-System**/
 
    ├── property/
 
@@ -79,6 +82,7 @@ The **Property Management System** is a comprehensive command-line application d
 ├── Pipfile.lock          # Lock file for Pipenv to ensure reproducible installs
 
 └── README.md             # Project documentation
+```
 
 
 
