@@ -165,6 +165,27 @@ def update_property(property_id, new_address, new_location):
     else:
         click.echo(f"Property ID {property_id} not found.")
     db.close() 
+    
+@click.command()
+@click.option('--client_id', prompt='Client ID', help='ID of the client to update.', type=int)
+@click.option('--name', prompt='New name', help='New name of the client.')
+@click.option('--email', prompt='New email', help='New email of the client.')
+def update_client(client_id, name, email):
+    """Update an existing client."""
+    db = SessionLocal()
+    client = db.query(Client).filter(Client.id == client_id).first()
+    if client:
+        client.name = name
+        client.email = email
+        db.commit()
+        click.echo(f"Client ID {client_id} updated successfully!")
+    else:
+        click.echo(f"Client ID {client_id} not found.")
+    db.close()
+   
+    
+    
+    
 @click.command()
 @click.option('--client_id', prompt='Client ID', help='ID of the client to delete.', type=int)
 def delete_client(client_id):
@@ -261,6 +282,7 @@ cli.add_command(search_client)
 cli.add_command(search_property)
 cli.add_command(view_payments)
 cli.add_command(export_property_report)
+cli.add_command(update_client)
 
 
 
