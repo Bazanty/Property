@@ -164,7 +164,20 @@ def update_property(property_id, new_address, new_location):
         click.echo(f"Property ID {property_id} updated successfully!")
     else:
         click.echo(f"Property ID {property_id} not found.")
-    db.close()                                            
+    db.close() 
+@click.command()
+@click.option('--client_id', prompt='Client ID', help='ID of the client to delete.', type=int)
+def delete_client(client_id):
+    """Delete an existing client."""
+    db = SessionLocal()
+    client = db.query(Client).filter(Client.id == client_id).first()
+    if client:
+        db.delete(client)
+        db.commit()
+        click.echo(f"Client ID {client_id} deleted successfully!")
+    else:
+        click.echo(f"Client ID {client_id} not found.")
+    db.close()                                               
 cli.add_command(signup) 
 cli.add_command(login)  
 cli.add_command(add_property)
@@ -175,6 +188,7 @@ cli.add_command(list_clients)
 cli.add_command(list_properties)
 cli.add_command(list_rooms)
 cli.add_command(update_property)
+cli.add_command(delete_client)
 
 if __name__ == '__main__':
     cli()     
