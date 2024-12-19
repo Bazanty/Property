@@ -1,7 +1,7 @@
 # Property Management System
 The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
 
-## **Table of Content**
+## Table of Content
 -Project Overview
 
 -Features
@@ -124,10 +124,15 @@ Feel free to fork the repository, open issues, and submit pull requests. By cont
 
  **How to Contribute**
 1.Fork the repository.
+
 2.Create a new branch `(git checkout -b feature-branch)`.
+
 3.Make your changes.
+
 4.Commit your changes `(git commit -am 'Add new feature')`.
+
 5.Push to your branch `(git push origin feature-branch)`.
+
 6.Open a pull request.
 
 
@@ -145,13 +150,13 @@ Thank you for your interest and contributions!
 4.Pipfile.lock: Locks the dependencies to ensure that everyone is using the same versions.
 
 
-###### License
+#### License
 This project is licensed under the MIT License - see the [LICENSE] file for details.
 
-###### Author 
+#### Author 
 This project was developed by **Nyakundi Brian**
 
-###### Project URL
+#### Project URL
 You can access the project repository and related resources at the following URL:
 
 Project URL
