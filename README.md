@@ -109,46 +109,56 @@ The **Property Management System** is a comprehensive command-line application d
 **Using Pip**
 
 1.Create a Virtual Environmnet:
-`python -m venv venv`
+
+```python -m venv venv```
 
 
 2.Activate the virtual Env
 * On Linux/macOS:
-`source venv/bin/activate`
+```source venv/bin/activate```
+
 * On Windows:
-`venv\Scripts\activate`
+```venv\Scripts\activate```
 
 
 3.**Install Dependancies**: 
-`pip install -r property/requirements.txt`
+
+```pip install -r property/requirements.txt```
 
 
 4. **Intialize the Database**:
-`python property/database.py`
+5. 
+```python property/database.py```
 
 
-5. **Run the Application** 
-`python -m property.main`
+6. **Run the Application**
+
+```python -m property.main```
 
 
 
    **Using Pipenv**
 
 1.**Install Pipenv**
-`pip install pipenv`
+
+```pip install pipenv```
 
 2.**Install Dependancies:**
 Pipfile:
-`pipenv install`
+
+```pipenv install```
 
 3.**Activate the Virtual Environment**
-`pipenv shell`
+
+```pipenv shell```
 
 4.**Create the Database**:
-`python property/database.py`
+
+```python property/database.py```
 
 5.**Run the Application**:
-python -m property.main 
+
+```python -m property.main``` 
 
 
 
