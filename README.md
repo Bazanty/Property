@@ -1,5 +1,5 @@
 # Property Management System
--The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
+The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
 
 ## **Table of Content**
 -Project Overview
@@ -39,7 +39,7 @@ The **Property Management System** is a Python-based application designed to str
 
 -**Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
 
-##### **Structure**
+##### Structure
 Property-Management-System/
 ├── property/
 
