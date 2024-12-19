@@ -1,6 +1,8 @@
 # Property Management System
 The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
 
+
+
 ## Table of Content
 * Project Overview
 
@@ -103,17 +105,21 @@ Property-Management-System/
 1.Create a Virtual Environmnet:
 `python -m venv venv`
 
+
 2.Activate the virtual Env
 * On Linux/macOS:
 `source venv/bin/activate`
 * On Windows:
 `venv\Scripts\activate`
 
+
 3.**Install Dependancies**: 
 `pip install -r property/requirements.txt`
 
+
 4. **Intialize the Database**:
 `python property/database.py`
+
 
 5. **Run the Application** 
 `python -m property.main`
