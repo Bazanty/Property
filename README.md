@@ -3,14 +3,23 @@
 
 ## **Table of Content**
 -Project Overview
+
 -Features
+
 -structure
+
 -File Description
+
 -Installation
+
 -Usage
+
 -CLI Commands
+
 -Contributing
+
 -License
+
 -Author
 
 ### **Overview**
@@ -40,7 +49,7 @@ Property-Management-System/
 ├── Pipfile.lock          # Lock file for Pipenv to ensure reproducible installs
 └── README.md             # Project documentation
 
-###### **File Descriptions**:
+###### File Descriptions:
 -cli.py: Contains the logic for handling command-line interface commands that interact with the user.
 
 -database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
@@ -67,13 +76,13 @@ Property-Management-System/
 -On Windows:
 `venv\Scripts\activate`
 
-3.Install Dependancies: 
+3.**Install Dependancies**: 
 `pip install -r property/requirements.txt`
 
-4.Intialize the Database:
+4.**Intialize the Database**:
 `python property/database.py`
 
-5. Run the Application 
+5. **Run the Application** 
 `python -m property.main`
 
 **Using Pipenv**
@@ -84,13 +93,13 @@ Property-Management-System/
 Pipfile:
 `pipenv install`
 
-3.Activate the Virtual Environment
+3.**Activate the Virtual Environment**
 `pipenv shell`
 
-4.Create the Database:
+4.**Create the Database**:
 `python property/database.py`
 
-5.Run the Application:
+5.**Run the Application**:
 python -m property.main 
 
 **Contribution**
