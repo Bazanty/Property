@@ -291,6 +291,23 @@ def export_room_report():
     click.echo("Room report exported successfully!")
     db.close()
 
+@click.command()
+@click.option('--client_id', prompt='Client ID', help='ID of the client.', type=int)
+@click.option('--property_id', prompt='Property ID', help='ID of the property to assign.', type=int)
+def assign_property(client_id, property_id):
+    """Assign a property to a client."""
+    db = SessionLocal()
+    client = db.query(Client).filter(Client.id == client_id).first()
+    property = db.query(Property).filter(Property.id == property_id).first()
+    if client and property:
+        client.property_id = property_id
+        db.commit()
+        click.echo(f"Property ID {property_id} assigned to client ID {client_id} successfully!")
+    else:
+        click.echo("Client or Property not found. Please check the provided details.")
+    db.close()
+    
+
     
 
                                                      
