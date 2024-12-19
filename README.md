@@ -2,6 +2,9 @@
 The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
 
 
+# By Nyakundi Brian
+
+
 
 ## Table of Content
    * Project Overview
@@ -14,6 +17,8 @@ The **Property Management System** is a comprehensive command-line application d
 
    * Installation
 
+   * Tech stack
+
    * Usage
 
    * CLI Commands
@@ -22,7 +27,7 @@ The **Property Management System** is a comprehensive command-line application d
 
    * License
 
-   * Author
+
 
 
 ### **Overview**
@@ -32,7 +37,7 @@ The **Property Management System** is a comprehensive command-line application d
 
 
 
-#### **Features**
+### **Features**
    * **Agent Management**: Create and manage agents, including authentication and profile details.
 
 
@@ -53,11 +58,11 @@ The **Property Management System** is a comprehensive command-line application d
 
 
 
-##### Project Structure
+### Project Structure
 
 
-  ```bash
-   **Property-Management-System**/
+  ```python
+   Property-Management-System/
 
    ├── property/
 
@@ -98,81 +103,111 @@ The **Property Management System** is a comprehensive command-line application d
 * requirements.txt: Lists the necessary dependencies for running the project.
 
 * property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
+  
+* LICENSE: The open-source license for the project, specifying how others can use and distribute the code.
 
+* property.db: The SQLite database file storing all agent, client, property, room, and payment data.
+
+* Pipfile: Manages the project’s dependencies using Pipenv.
+
+* Pipfile.lock: Locks the dependencies to ensure that everyone is using the same versions.
+
+
+### Technology Stack
+This project is built using the following technologies:
+
+**Backend**:
+* [Python](https://www.python.org)(Programming language)
+* [SQLAlchemy](https://www.python.org)(ORM for database interaction)
+* [Click](https://www.python.org)(for creating CLI commands)
+
+**Database**:
+SQLite (used for local development, can be switched to PostgreSQL or MySQL for production)
+
+**Authentication**:
+bcrypt (for password hashing)
+
+**Environment Management**:
+Pipenv (for managing Python dependencies)
 
 
  #### Installation and Setup
  To get the **Property Management System** up and running, follow these steps:
 
- 
-
-**Using Pip**
+ **Using Pip**
 
 1.Create a Virtual Environmnet:
 
-```python -m venv venv```
+```python
+python -m venv venv
 
 
 2.Activate the virtual Env
 * On Linux/macOS:
-```source venv/bin/activate```
+
+`source venv/bin/activate`
 
 * On Windows:
-```venv\Scripts\activate```
+
+`venv\Scripts\activate`
 
 
 3.**Install Dependancies**: 
 
-```pip install -r property/requirements.txt```
+`pip install -r property/requirements.txt`
 
 
 4. **Intialize the Database**:
 5. 
-```python property/database.py```
+`python property/database.py`
 
 
 6. **Run the Application**
 
-```python -m property.main```
+`python -m property.main`
 
-
+```
 
    **Using Pipenv**
-
+```python
 1.**Install Pipenv**
 
-```pip install pipenv```
+`pip install pipenv`
 
 2.**Install Dependancies:**
 Pipfile:
 
-```pipenv install```
+`pipenv install`
 
 3.**Activate the Virtual Environment**
 
-```pipenv shell```
+`pipenv shell`
 
 4.**Create the Database**:
 
-```python property/database.py```
+`python property/database.py`
 
 5.**Run the Application**:
 
-```python -m property.main``` 
+`python -m property.main` 
+
+```
 
 
 
-   **Contribution**
+  ### **Contribution**
 We welcome contributions from anyone who wants to help improve the Property Management System. If you have ideas to solve real-world problems faced by property managers, agents, and clients, your input is highly valued.
 Feel free to fork the repository, open issues, and submit pull requests. By contributing, you'll be making the system more powerful and helping property managers work more efficiently.
 
 
 
    **How to Contribute**
- 
+ ```python
 1.Fork the repository.
 
-2.Create a new branch `(git checkout -b feature-branch)`.
+2.Create a new branch 
+
+`(git checkout -b feature-branch)`.
 
 3.Make your changes.
 
@@ -181,37 +216,28 @@ Feel free to fork the repository, open issues, and submit pull requests. By cont
 5.Push to your branch `(git push origin feature-branch)`.
 
 6.Open a pull request.
+```
 
 
 
 Thank you for your interest and contributions!
 
 
-#### File Descriptions
 
-
-1.LICENSE: The open-source license for the project, specifying how others can use and distribute the code.
-
-2.property.db: The SQLite database file storing all agent, client, property, room, and payment data.
-
-3.Pipfile: Manages the project’s dependencies using Pipenv.
-
-4.Pipfile.lock: Locks the dependencies to ensure that everyone is using the same versions.
 
 
 #### License
 This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 
-#### Author 
-This project was developed by **Nyakundi Brian**
+
 
 
 #### Project URL
 You can access the project repository and related resources at the following URL:
 
 
-Project URL: https://github.com/Bazanty/Property
+Project URL:https://github.com/Bazanty/Property
 
 
 
