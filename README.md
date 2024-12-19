@@ -186,7 +186,7 @@ This project was developed by **Nyakundi Brian**
 You can access the project repository and related resources at the following URL:
 
 
-Project URL
+Project URL: https://github.com/Bazanty/Property
 
 
 
