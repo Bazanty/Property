@@ -105,15 +105,22 @@ def add_room(type, size, property_id):
     finally:
         db.close()  
 
+from datetime import datetime
+
 @click.command()
 @click.option('--amount', prompt='Payment amount', help='Amount of the payment.', type=float)
-@click.option('--date', prompt='Payment date', help='Date of the payment (YYYY-MM-DD).')
+@click.option('--date', prompt='Payment date', help='Date of the payment (YYYY-MM-DD or DD/MM/YYYY).')
 @click.option('--client_id', prompt='Client ID', help='ID of the client making the payment.', type=int)
 def add_payment(amount, date, client_id):
     """Add a new payment for a client."""
     db = SessionLocal()
     try:
-        payment_date = datetime.strptime(date, '%Y-%m-%d').date()
+        # Try parsing the date in the two expected formats
+        try:
+            payment_date = datetime.strptime(date, '%Y-%m-%d').date()
+        except ValueError:
+            payment_date = datetime.strptime(date, '%d/%m/%Y').date()
+
         payment = Payment(amount=amount, date=payment_date, client_id=client_id)
         db.add(payment)
         db.commit()
@@ -121,8 +128,11 @@ def add_payment(amount, date, client_id):
     except IntegrityError:
         db.rollback()
         click.echo("Failed to add payment. Please check the provided details.")
+    except ValueError:
+        click.echo("Invalid date format. Please use either YYYY-MM-DD or DD/MM/YYYY.")
     finally:
-        db.close()  
+        db.close()
+
 
 @click.command()
 def list_clients():
