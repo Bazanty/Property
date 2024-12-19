@@ -2,25 +2,25 @@
 The **Property Management System** is a comprehensive command-line application designed to help real estate agents efficiently manage properties, clients, rooms, and payments. Built using Python and SQLAlchemy, the system provides an easy-to-use interface for managing agents, properties, clients, and transactions.
 
 ## Table of Content
--Project Overview
+*Project Overview
 
--Features
+*Features
 
--structure
+*structure
 
--File Description
+*File Description
 
--Installation
+*Installation
 
--Usage
+*Usage
 
--CLI Commands
+*CLI Commands
 
--Contributing
+*Contributing
 
--License
+*License
 
--Author
+*Author
 
 
 ### **Overview**
@@ -29,22 +29,22 @@ The **Property Management System** is a Python-based application designed to str
 
 
 #### **Features**
--**Agent Management**: Create and manage agents, including authentication and profile details.
+* **Agent Management**: Create and manage agents, including authentication and profile details.
 
 
--**Property Management**: Add, update, delete, and list properties.
+* **Property Management**: Add, update, delete, and list properties.
 
 
--**Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
+* **Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
 
 
--**Client Management**: Manage client information, link clients to properties, and handle client data.
+* **Client Management**: Manage client information, link clients to properties, and handle client data.
 
 
--**Payment Management**: Record and track payments made by clients for their rented properties.
+* **Payment Management**: Record and track payments made by clients for their rented properties.
 
 
--**Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
+* **Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
 
 
 
@@ -79,21 +79,21 @@ Property-Management-System/
 
 
 ##### File Descriptions:
--cli.py: Contains the logic for handling command-line interface commands that interact with the user.
+*cli.py: Contains the logic for handling command-line interface commands that interact with the user.
 
--database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
+*database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
 
--models.py: Defines SQLAlchemy models representing agents, clients, properties, rooms, and payments.
+*models.py: Defines SQLAlchemy models representing agents, clients, properties, rooms, and payments.
 
--main.py: The main entry point for the application, where the execution of commands takes place.
+*main.py: The main entry point for the application, where the execution of commands takes place.
 
--requirements.txt: Lists the necessary dependencies for running the project.
+*requirements.txt: Lists the necessary dependencies for running the project.
 
--property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
+*property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
 
 
 
- ###### Installation and Setup
+ #### Installation and Setup
  To get the **Property Management System** up and running, follow these steps:
 
  
