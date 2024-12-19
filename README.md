@@ -23,30 +23,46 @@
 -Author
 
 ### **Overview**
--The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
+The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
 
 
 #### **Features**
 -**Agent Management**: Create and manage agents, including authentication and profile details.
+
 -**Property Management**: Add, update, delete, and list properties.
+
 -**Room Management**: Add rooms to properties, list rooms, and remove rooms as needed.
+
 -**Client Management**: Manage client information, link clients to properties, and handle client data.
+
 -**Payment Management**: Record and track payments made by clients for their rented properties.
+
 -**Search Functionality**: Easily search properties and clients by different criteria like name, address, etc.
 
 ##### **Structure**
 Property-Management-System/
 ├── property/
+
 │   ├── cli.py            # CLI commands and logic
+
 │   ├── database.py       # Database configuration and session management
+
 │   ├── models.py         # SQLAlchemy models (Agent, Property, Client, etc.)
+
 │   ├── main.py           # Entry point for the application
+
 │   ├── requirements.txt  # Project dependencies
+
 ├── venv/                 # Virtual environment directory (usually excluded from version control)
+
 ├── property.db           # SQLite database file storing all the data
+
 ├── LICENSE               # Project license (e.g., MIT, Apache, GPL)
+
 ├── Pipfile               # Pipenv dependency management file
+
 ├── Pipfile.lock          # Lock file for Pipenv to ensure reproducible installs
+
 └── README.md             # Project documentation
 
 ###### File Descriptions:
