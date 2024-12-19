@@ -264,6 +264,23 @@ def export_property_report():
             writer.writerow([property.id, property.address, property.location, property.agent_id])
     click.echo("Property report exported successfully!")
     db.close()
+import csv
+
+@click.command()
+def export_client_report():
+    """Export a report of all clients to a CSV file."""
+    db = SessionLocal()
+    clients = db.query(Client).all()
+    with open('clients_report.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Client ID", "Name", "Email", "Agent ID", "Property ID"])
+        for client in clients:
+            writer.writerow([client.id, client.name, client.email, client.agent_id, client.property_id])
+    click.echo("Client report exported successfully!")
+    db.close()
+
+
+    
 
                                                      
 cli.add_command(signup) 
@@ -282,6 +299,7 @@ cli.add_command(search_client)
 cli.add_command(search_property)
 cli.add_command(view_payments)
 cli.add_command(export_property_report)
+cli.add_command(export_client_report)
 cli.add_command(update_client)
 
 
