@@ -216,7 +216,23 @@ def search_property(address):
             click.echo(f"Property ID: {property.id}, Address: {property.address}, Location: {property.location}")
     else:
         click.echo(f"No properties found with address {address}.")
-    db.close()                                                       
+    db.close()    
+@click.command()
+@click.option('--client_id', prompt='Client ID', help='ID of the client to view payment history.', type=int)
+def view_payments(client_id):
+    """View payment history of a client."""
+    db = SessionLocal()
+    payments = db.query(Payment).filter(Payment.client_id == client_id).all()
+    if payments:
+        for payment in payments:
+            click.echo(f"Payment ID: {payment.id}, Amount: {payment.amount}, Date: {payment.date}")
+    else:
+        click.echo(f"No payments found for client ID {client_id}.")
+    db.close()
+
+import csv  
+
+                                                     
 cli.add_command(signup) 
 cli.add_command(login)  
 cli.add_command(add_property)
@@ -231,6 +247,8 @@ cli.add_command(delete_client)
 cli.add_command(delete_room)
 cli.add_command(search_client)
 cli.add_command(search_property)
+cli.add_command(view_payments)
+
 
 
 if __name__ == '__main__':
