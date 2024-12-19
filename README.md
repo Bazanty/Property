@@ -79,17 +79,17 @@ Property-Management-System/
 
 
 ##### File Descriptions:
-*cli.py: Contains the logic for handling command-line interface commands that interact with the user.
+* cli.py: Contains the logic for handling command-line interface commands that interact with the user.
 
-*database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
+* database.py: Configures the connection to the **SQLite** database and handles session management using **SQLAlchemy**.
 
-*models.py: Defines SQLAlchemy models representing agents, clients, properties, rooms, and payments.
+* models.py: Defines SQLAlchemy models representing agents, clients, properties, rooms, and payments.
 
-*main.py: The main entry point for the application, where the execution of commands takes place.
+* main.py: The main entry point for the application, where the execution of commands takes place.
 
-*requirements.txt: Lists the necessary dependencies for running the project.
+* requirements.txt: Lists the necessary dependencies for running the project.
 
-*property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
+* property.db: SQLite database file where all data related to agents, properties, rooms, clients, and payments is stored.
 
 
 
@@ -101,21 +101,21 @@ Property-Management-System/
 **Using Pip**
 
 1.Create a Virtual Environmnet:
-```python -m venv venv```
+`python -m venv venv`
 
 2.Activate the virtual Env
--On Linux/macOS:
+* On Linux/macOS:
 `source venv/bin/activate`
--On Windows:
+* On Windows:
 `venv\Scripts\activate`
 
 3.**Install Dependancies**: 
 `pip install -r property/requirements.txt`
 
-4.**Intialize the Database**:
+4. **Intialize the Database**:
 `python property/database.py`
 
-5.**Run the Application** 
+5. **Run the Application** 
 `python -m property.main`
 
 
@@ -139,13 +139,13 @@ python -m property.main
 
 
 
-**Contribution**
+   **Contribution**
 We welcome contributions from anyone who wants to help improve the Property Management System. If you have ideas to solve real-world problems faced by property managers, agents, and clients, your input is highly valued.
 Feel free to fork the repository, open issues, and submit pull requests. By contributing, you'll be making the system more powerful and helping property managers work more efficiently.
 
 
 
- **How to Contribute**
+   **How to Contribute**
  
 1.Fork the repository.
 
