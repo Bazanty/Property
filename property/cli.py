@@ -123,13 +123,22 @@ def add_payment(amount, date, client_id):
         click.echo("Failed to add payment. Please check the provided details.")
     finally:
         db.close()  
-                                     
+
+@click.command()
+def list_clients():
+    """List all clients."""
+    db = SessionLocal()
+    clients = db.query(Client).all()
+    for client in clients:
+        click.echo(f"Client ID: {client.id}, Name: {client.name}, Email: {client.email}")
+    db.close()                                     
 cli.add_command(signup) 
 cli.add_command(login)  
 cli.add_command(add_property)
 cli.add_command(add_client)
 cli.add_command(add_room)
 cli.add_command(add_payment)
+cli.add_command(list_clients)
 
 if __name__ == '__main__':
     cli()     
