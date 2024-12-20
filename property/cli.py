@@ -317,6 +317,12 @@ def assign_property(client_id, property_id):
         click.echo("Client or Property not found. Please check the provided details.")
     db.close()
     
+@click.command()
+def exit():
+    """Exit the CLI."""
+    click.echo("Exiting the Property Management CLI.")
+    raise SystemExit(0)  # Exit the program with a success code
+
 
     
 
@@ -340,6 +346,7 @@ cli.add_command(export_property_report)
 cli.add_command(export_client_report)
 cli.add_command(export_room_report)
 cli.add_command(update_client)
+cli.add_command(exit)
 
 
 

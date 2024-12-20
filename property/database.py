@@ -4,6 +4,10 @@ from property.models import Base
 
 
 
+
+
+
+
 DATABASE_URL = "sqlite:///property.db"
 
 engine = create_engine(DATABASE_URL)

@@ -15,7 +15,7 @@ The **Property Management System** is a comprehensive command-line application d
 *Project URL
 
 ### **Overview**
--The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
+The **Property Management System** is a Python-based application designed to streamline property management for agents. It provides an easy-to-navigate command-line interface (CLI) that allows agents to manage their properties, clients, rooms, and payments efficiently. The system uses **SQLite** for database storage and **SQLAlchemy** as an ORM to interact with the database.
 
 
 #### **Features**
